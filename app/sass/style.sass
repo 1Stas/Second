@@ -90,7 +90,6 @@ html
 	p
 		display: inline
 		color: #8c8c8c
-		margin-bottom: 0px
 	strong
 		color: #000
 		font-size: 24px
@@ -122,7 +121,6 @@ html
 		position: relative
 		display: inline-block
 		width: 180px
-		color: red
 		a
 			color: white
 			text-transform: uppercase
@@ -150,7 +148,6 @@ html
 		position: relative
 		display: inline-block
 		width: 180px
-		color: red
 		a
 			color: white
 			text-transform: uppercase
@@ -179,7 +176,6 @@ html
 		position: relative
 		display: inline-block
 		width: 180px
-		color: red
 		a
 			color: white
 			text-transform: uppercase
@@ -207,7 +203,6 @@ html
 		position: relative
 		display: inline-block
 		width: 180px
-		color: red
 		a
 			color: white
 			text-transform: uppercase
@@ -235,7 +230,6 @@ html
 		position: relative
 		display: inline-block
 		width: 180px
-		color: red
 		a
 			color: white
 			text-transform: uppercase
@@ -263,7 +257,6 @@ html
 		position: relative
 		display: inline-block
 		width: 180px
-		color: red
 		a
 			color: white
 			text-transform: uppercase
@@ -378,11 +371,89 @@ html
 		margin: 0
 		list-style: none
 		width: 25%
-		margin: auto
-		li:nth-child(1)
+		height: 600px
+		margin: 0 auto 0 auto
+		text-align: center
+		h3 
+			color: orange
+		li:nth-child(1) h5 
+			color: red
 
 
 
+.wrap__cube 
+	margin: 20px 0 20px 0
+	perspective: 1000px
+	perspective-origin: 50% 50%
+
+.cube1, .cube2, .cube3, .cube4, .cube5, .cube6
+	margin: auto
+	position: relative
+	height: 80px
+	width: 80px
+	transform-style: preserve-3d
+	> div
+		position: absolute
+		box-sizing: border-box
+		padding: 5px
+		height: 100%
+		width: 100%
+
+.cube1 > div
+	background: url(../img/our-services-1.png) no-repeat center
+	background-size: 100% 100%
+
+.cube2 > div
+	background: url(../img/our-services-2.jpg) no-repeat center
+	background-size: 100% 100%
+
+.cube3 > div
+	background: url(../img/our-services-3.jpg) no-repeat center
+	background-size: 100% 100%
+
+.cube4 > div
+	background: url(../img/our-services-4.jpg) no-repeat center
+	background-size: 100% 100%
+
+.cube5 > div
+	background: url(../img/our-services-5.png) no-repeat center
+	background-size: 100% 100%
+
+.cube6 > div
+	background: url(../img/our-services-6.png) no-repeat center
+	background-size: 100% 100%
+
+.front
+	transform: translateZ(80px)
+
+.back
+	transform: translateZ(0px) rotateY(180deg)
+
+.right
+	transform: rotateY(-270deg) translateX(0px)
+	transform-origin: top right
+
+.left
+	transform: rotateY(270deg) translateX(0px)
+	transform-origin: center left
+
+.top
+	transform: rotateX(-270deg) translateY(0px)
+	transform-origin: top center
+
+.bottom
+	transform: rotateX(270deg) translateY(0px)
+	transform-origin: bottom center
+
+@keyframes rotate
+	from
+		transform: rotateX(0deg) rotateY(0deg)
+
+	to
+		transform: rotateX(360deg) rotateY(360deg)
+
+.cube1, .cube2, .cube3, .cube4, .cube5, .cube6
+	animation: rotate 0s infinite linear
 
 
 

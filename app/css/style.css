@@ -104,8 +104,7 @@ html {
     color: red; }
   .telephone p {
     display: inline;
-    color: #8c8c8c;
-    margin-bottom: 0px; }
+    color: #8c8c8c; }
   .telephone strong {
     color: #000;
     font-size: 24px; }
@@ -136,8 +135,7 @@ html {
 .navbar-3 ul li:nth-child(1) {
   position: relative;
   display: inline-block;
-  width: 180px;
-  color: red; }
+  width: 180px; }
   .navbar-3 ul li:nth-child(1) a {
     color: white;
     text-transform: uppercase;
@@ -166,8 +164,7 @@ html {
 .navbar-3 ul li:nth-child(2) {
   position: relative;
   display: inline-block;
-  width: 180px;
-  color: red; }
+  width: 180px; }
   .navbar-3 ul li:nth-child(2) a {
     color: white;
     text-transform: uppercase;
@@ -197,8 +194,7 @@ html {
 .navbar-3 ul li:nth-child(3) {
   position: relative;
   display: inline-block;
-  width: 180px;
-  color: red; }
+  width: 180px; }
   .navbar-3 ul li:nth-child(3) a {
     color: white;
     text-transform: uppercase;
@@ -227,8 +223,7 @@ html {
 .navbar-3 ul li:nth-child(4) {
   position: relative;
   display: inline-block;
-  width: 180px;
-  color: red; }
+  width: 180px; }
   .navbar-3 ul li:nth-child(4) a {
     color: white;
     text-transform: uppercase;
@@ -257,8 +252,7 @@ html {
 .navbar-3 ul li:nth-child(5) {
   position: relative;
   display: inline-block;
-  width: 180px;
-  color: red; }
+  width: 180px; }
   .navbar-3 ul li:nth-child(5) a {
     color: white;
     text-transform: uppercase;
@@ -287,8 +281,7 @@ html {
 .navbar-3 ul li:nth-child(6) {
   position: relative;
   display: inline-block;
-  width: 180px;
-  color: red; }
+  width: 180px; }
   .navbar-3 ul li:nth-child(6) a {
     color: white;
     text-transform: uppercase;
@@ -421,4 +414,118 @@ html {
   margin: 0;
   list-style: none;
   width: 25%;
-  margin: auto; }
+  height: 600px;
+  margin: 0 auto 0 auto;
+  text-align: center; }
+  .our-services ul h3 {
+    color: orange; }
+  .our-services ul li:nth-child(1) h5 {
+    color: red; }
+
+.wrap__cube {
+  margin: 20px 0 20px 0;
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+  -webkit-perspective-origin: 50% 50%;
+          perspective-origin: 50% 50%; }
+
+.cube1, .cube2, .cube3, .cube4, .cube5, .cube6 {
+  margin: auto;
+  position: relative;
+  height: 80px;
+  width: 80px;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d; }
+  .cube1 > div, .cube2 > div, .cube3 > div, .cube4 > div, .cube5 > div, .cube6 > div {
+    position: absolute;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 5px;
+    height: 100%;
+    width: 100%; }
+
+.cube1 > div {
+  background: url(../img/our-services-1.png) no-repeat center;
+  -webkit-background-size: 100% 100%;
+          background-size: 100% 100%; }
+
+.cube2 > div {
+  background: url(../img/our-services-2.jpg) no-repeat center;
+  -webkit-background-size: 100% 100%;
+          background-size: 100% 100%; }
+
+.cube3 > div {
+  background: url(../img/our-services-3.jpg) no-repeat center;
+  -webkit-background-size: 100% 100%;
+          background-size: 100% 100%; }
+
+.cube4 > div {
+  background: url(../img/our-services-4.jpg) no-repeat center;
+  -webkit-background-size: 100% 100%;
+          background-size: 100% 100%; }
+
+.cube5 > div {
+  background: url(../img/our-services-5.png) no-repeat center;
+  -webkit-background-size: 100% 100%;
+          background-size: 100% 100%; }
+
+.cube6 > div {
+  background: url(../img/our-services-6.png) no-repeat center;
+  -webkit-background-size: 100% 100%;
+          background-size: 100% 100%; }
+
+.front {
+  -webkit-transform: translateZ(80px);
+          transform: translateZ(80px); }
+
+.back {
+  -webkit-transform: translateZ(0px) rotateY(180deg);
+          transform: translateZ(0px) rotateY(180deg); }
+
+.right {
+  -webkit-transform: rotateY(-270deg) translateX(0px);
+          transform: rotateY(-270deg) translateX(0px);
+  -webkit-transform-origin: top right;
+      -ms-transform-origin: top right;
+          transform-origin: top right; }
+
+.left {
+  -webkit-transform: rotateY(270deg) translateX(0px);
+          transform: rotateY(270deg) translateX(0px);
+  -webkit-transform-origin: center left;
+      -ms-transform-origin: center left;
+          transform-origin: center left; }
+
+.top {
+  -webkit-transform: rotateX(-270deg) translateY(0px);
+          transform: rotateX(-270deg) translateY(0px);
+  -webkit-transform-origin: top center;
+      -ms-transform-origin: top center;
+          transform-origin: top center; }
+
+.bottom {
+  -webkit-transform: rotateX(270deg) translateY(0px);
+          transform: rotateX(270deg) translateY(0px);
+  -webkit-transform-origin: bottom center;
+      -ms-transform-origin: bottom center;
+          transform-origin: bottom center; }
+
+@-webkit-keyframes rotate {
+  from {
+    -webkit-transform: rotateX(0deg) rotateY(0deg);
+            transform: rotateX(0deg) rotateY(0deg); }
+  to {
+    -webkit-transform: rotateX(360deg) rotateY(360deg);
+            transform: rotateX(360deg) rotateY(360deg); } }
+
+@keyframes rotate {
+  from {
+    -webkit-transform: rotateX(0deg) rotateY(0deg);
+            transform: rotateX(0deg) rotateY(0deg); }
+  to {
+    -webkit-transform: rotateX(360deg) rotateY(360deg);
+            transform: rotateX(360deg) rotateY(360deg); } }
+
+.cube1, .cube2, .cube3, .cube4, .cube5, .cube6 {
+  -webkit-animation: rotate 0s infinite linear;
+          animation: rotate 0s infinite linear; }
