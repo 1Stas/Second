@@ -1,10 +1,5 @@
-body 
-	width: 100%
-	height: 100%
+.main
 	padding: 10px 20px 10px 20px
-
-html 
-	height: 100%
 
 .logo-text
 	display: inline-block
@@ -282,27 +277,27 @@ html
 
 .sky
 	position: relative
-	background: url(../img/sky.jpg) no-repeat
-	height: 100%
 	width: 100%
-	background-size: 100% 500px
-	a 
-		position: absolute
-		border: 2px solid blue
-		box-shadow: 5px 5px 10px black
-		background-color: orange
-		border-radius: 5px
-		padding: 5px 15px 5px 15px
-		margin-left: 25px
-		margin-top: 25px
-		text-transform: uppercase
+	height: 400px
+	background: url(../img/sky.jpg) no-repeat center/cover
+
+.sky a 
+	position: absolute
+	border: 2px solid blue
+	box-shadow: 5px 5px 10px black
+	background-color: orange
+	border-radius: 5px
+	padding: 5px 15px 5px 15px
+	margin-left: 25px
+	margin-top: 25px
+	text-transform: uppercase
+	text-decoration: none
+	font-weight: bold
+	transition: .5s
+	&:hover
 		text-decoration: none
-		font-weight: bold
-		transition: .5s
-		&:hover
-			text-decoration: none
-			color: red
-			box-shadow: 8px 8px 20px black
+		color: red
+		box-shadow: 8px 8px 20px black
 
 .hidden
 	display: none
@@ -331,21 +326,26 @@ html
 
 .background-office
 	position: relative
-	margin: 5% auto
-	height: 800px
-	width: 800px
-	border-radius: 50%
+	width: 100%
+	border-radius: 0%
 	background: url(../img/office.jpg) no-repeat center
 	background-color: rgba(255,255,255,.9)
 	background-blend-mode: soft-light
-	z-index: 0
+
+.circle
+	position: absolute
+	width: 100%
+	height: 100%
+	left: 50%
+	top: 50%
+	transform: translate(-50%, -50%)
+	background: radial-gradient(transparent 400px, rgba(255,255,255,1) 400px)
 
 .our-services
 	position: relative
-	z-index: 0
-	top: -850px
 	h1 
 		position: relative
+		margin: 20px
 		font-weight: bold
 		text-transform: uppercase
 		text-align: center
@@ -365,21 +365,18 @@ html
 			&:after
 				margin-left: -90%
 
-.our-services 
+.our-services
 	ul 
-		padding: 0
-		margin: 0
+		width: 33%
+		padding: 20px
 		list-style: none
-		width: 25%
-		height: 600px
-		margin: 0 auto 0 auto
 		text-align: center
 		h3 
 			color: orange
+			margin: 30px 0
+			min-height: 15%
 		li:nth-child(1) h5 
 			color: red
-
-
 
 .wrap__cube 
 	margin: 20px 0 20px 0
@@ -454,6 +451,10 @@ html
 
 .cube1, .cube2, .cube3, .cube4, .cube5, .cube6
 	animation: rotate 0s infinite linear
+
+img 
+	width: 100%
+	background-size: 50%
 
 
 
