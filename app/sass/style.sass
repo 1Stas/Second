@@ -19,8 +19,9 @@
 			text-decoration: none
 
 .navbar-tel h6 a
-			text-decoration: none
-			border-bottom: 1px dashed blue
+	position: relative
+	text-decoration: none
+	border-bottom: 1px dashed blue
 
 .fa-map-marker
 	color: black
@@ -366,17 +367,53 @@
 				margin-left: -90%
 
 .our-services
+	width: 80%
+	margin: 0 auto
 	ul 
-		width: 33%
-		padding: 20px
+		width: 33.33%
+		padding: 50px 20px 20px 20px
 		list-style: none
-		text-align: center
+		border: 1px solid black
 		h3 
 			color: orange
 			margin: 30px 0
 			min-height: 15%
-		li:nth-child(1) h5 
-			color: red
+			text-align: center
+		button
+			display: block
+			padding: 7px 30px 7px 30px
+			margin-bottom: 30px
+			border: 3px solid orange
+			background: white
+			margin: 0 auto
+			a 
+				font-weight: bold
+				color: #000
+		li p
+			color: #8a8a8a
+
+.li
+	padding-left: 40px
+
+.complex
+	li:nth-child(1) h5
+		&:before
+			position: absolute
+			content: "\f02e"
+			font-family: FontAwesome
+			font-size: 2em
+			color: hsl(0, 0%, 40%)
+			left: 20px
+	li:nth-child(2) h5
+		&:before
+			position: absolute
+			content: "\f970"
+			font-family: FontAwesome
+			font-size: 2em
+			color: hsl(0, 0%, 40%)
+			left: 20px
+	li:nth-child(3) h5
+
 
 .wrap__cube 
 	margin: 20px 0 20px 0
@@ -452,6 +489,15 @@
 .cube1, .cube2, .cube3, .cube4, .cube5, .cube6
 	animation: rotate 0s infinite linear
 
+
+	
+	
+	
+	
+	
+	
+	
+	
 img 
 	width: 100%
 	background-size: 50%
