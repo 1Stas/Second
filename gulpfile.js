@@ -1,6 +1,7 @@
-var gulp       = require('gulp'), // Подключаем Gulp
-    sass         = require('gulp-sass'), //Подключаем Sass пакет,
+var gulp         = require('gulp'), // Подключаем Gulp
+    sass         = require('gulp-sass'), //Подключаем Sass пакет
     browserSync  = require('browser-sync'), // Подключаем Browser Sync
+    plumber      = require('gulp-plumber'), // Отлов ошибок галп и продолжение работы
     concat       = require('gulp-concat'),	// Подключаем gulp-concat (для конкатенации файлов)
     uglify       = require('gulp-uglifyjs'), // Подключаем gulp-uglifyjs (для сжатия JS)
     cssnano      = require('gulp-cssnano'),	// Подключаем пакет для минификации CSS
@@ -15,6 +16,7 @@ var gulp       = require('gulp'), // Подключаем Gulp
 // Конвертиция Sass в css + автопрефиксер
 gulp.task('sass', function(){ // Создаем таск Sass
     return gulp.src('app/sass/**/*.sass') // Берем источник
+    	.pipe(plumber()) // Отлов ошибок
         .pipe(sass()) // Преобразуем Sass в CSS посредством gulp-sass
         .pipe(autoprefixer(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true })) // Создаем префиксы
         .pipe(gulp.dest('app/css')) // Выгружаем результата в папку app/css
@@ -44,7 +46,7 @@ gulp.task('scripts', function() {
 
 
 gulp.task('css-libs', ['sass'], function() {
-//	setTimeout(function(){gulp.start('sass');},1500) // Задача выполниться через 500 миллисекунд и файл успеет сохраниться на диске 
+//	setTimeout(function(){gulp.start('sass');},500) // Задача выполниться через 500 миллисекунд и файл успеет сохраниться на диске 
     return gulp.src('app/css/libs.css') // Выбираем файл для минификации
         .pipe(cssnano()) // Сжимаем
         .pipe(rename({suffix: '.min'})) // Добавляем суффикс .min
@@ -55,8 +57,8 @@ gulp.task('css-libs', ['sass'], function() {
 // gulp.task('watch', ['browser-sync', 'css-libs', 'scripts'], function() { // Строка изменена
 gulp.task('watch', ['browser-sync'], function() {
 		gulp.watch('app/sass/**/*.sass', ['sass']); // Наблюдение за sass файлами в папке sass
-    gulp.watch('app/*.html', browserSync.reload); // Наблюдение за HTML файлами в корне проекта
-    gulp.watch('app/js/**/*.js', browserSync.reload); // Наблюдение за JS файлами в папке js
+    	gulp.watch('app/*.html', browserSync.reload); // Наблюдение за HTML файлами в корне проекта
+    	gulp.watch('app/js/**/*.js', browserSync.reload); // Наблюдение за JS файлами в папке js
 		gulp.watch('app/css/*.css', browserSync.reload); // Наблюдение за css 
 });
 
@@ -91,6 +93,7 @@ gulp.task('build', ['clean', 'img', 'sass', 'scripts'], function() {
 
     var buildJs = gulp.src('app/js/**/*') // Переносим скрипты в продакшен
     .pipe(gulp.dest('dist/js'))
+    
     var buildHtml = gulp.src('app/*.html') // Переносим HTML в продакшен
     .pipe(gulp.dest('dist'));
 
@@ -136,6 +139,7 @@ gulp.task('default', ['watch']);
 // npm i browser-sync --save-dev автообновление браузера
 // В ком строке gulp watch должен выдать что то типа Starting browser-sync after 96ms, тоже с sass, все работает
 // Остановить процесс Ctrl+c Y
+// npm i gulp-plumber -D Отлов ошибок галп, галп при ошибке не останавливается.
 // Оптимизация JavaScript
 // Создаем в app папку libs 
 // Устанавливаем GIT https://git-scm.com/downloads
@@ -173,6 +177,7 @@ gulp.task('default', ['watch']);
 // npm i gulp -g
 // npm init пишем имя проекта
 // npm i gulp --save-dev
+// npm i gulp-plumber -D (-D тоже что и --save-dev)
 // npm i gulp-sass --save-dev
 // npm i browser-sync --save-dev
 // npm i -g bower

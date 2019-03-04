@@ -390,7 +390,8 @@
   background: radial-gradient(transparent 400px, white 400px); }
 
 .our-services {
-  position: relative; }
+  position: relative;
+  padding-bottom: 30px; }
   .our-services h1 {
     position: relative;
     margin: 20px;
@@ -436,27 +437,154 @@
       .our-services ul button a {
         font-weight: bold;
         color: #000; }
-    .our-services ul li p {
-      color: #8a8a8a; }
+    .our-services ul li {
+      padding-left: 40px; }
+      .our-services ul li p {
+        color: #8a8a8a; }
 
-.li {
-  padding-left: 40px; }
+.complex {
+  position: relative; }
+  .complex li:nth-child(3) h5:before {
+    position: absolute;
+    content: "\f02e";
+    font-family: FontAwesome;
+    font-size: 1.5em;
+    color: #666666;
+    left: 20px; }
+  .complex li:nth-child(4) h5:before {
+    position: absolute;
+    content: "\f080";
+    font-family: FontAwesome;
+    font-size: 1.5em;
+    color: #666666;
+    left: 20px; }
+  .complex li:nth-child(5) h5:before {
+    position: absolute;
+    content: "\f29b";
+    font-family: FontAwesome;
+    font-size: 1.5em;
+    color: #666666;
+    left: 20px; }
 
-.complex li:nth-child(1) h5:before {
-  position: absolute;
-  content: "\f02e";
-  font-family: FontAwesome;
-  font-size: 2em;
-  color: #666666;
-  left: 20px; }
+.trafic {
+  position: relative; }
+  .trafic li:nth-child(3) h5:before {
+    position: absolute;
+    content: "\f02e";
+    font-family: FontAwesome;
+    font-size: 1.5em;
+    color: #666666;
+    left: 20px; }
+  .trafic li:nth-child(4) h5:before {
+    position: absolute;
+    content: "\f080";
+    font-family: FontAwesome;
+    font-size: 1.5em;
+    color: #666666;
+    left: 20px; }
+  .trafic li:nth-child(5) h5:before {
+    position: absolute;
+    content: "\f29b";
+    font-family: FontAwesome;
+    font-size: 1.5em;
+    color: #666666;
+    left: 20px; }
 
-.complex li:nth-child(2) h5:before {
-  position: absolute;
-  content: "\f970";
-  font-family: FontAwesome;
-  font-size: 2em;
-  color: #666666;
-  left: 20px; }
+.landing {
+  position: relative; }
+  .landing li:nth-child(3) h5:before {
+    position: absolute;
+    content: "\f02e";
+    font-family: FontAwesome;
+    font-size: 1.5em;
+    color: #666666;
+    left: 20px; }
+  .landing li:nth-child(4) h5:before {
+    position: absolute;
+    content: "\f080";
+    font-family: FontAwesome;
+    font-size: 1.5em;
+    color: #666666;
+    left: 20px; }
+  .landing li:nth-child(5) h5:before {
+    position: absolute;
+    content: "\f29b";
+    font-family: FontAwesome;
+    font-size: 1.5em;
+    color: #666666;
+    left: 20px; }
+
+.site {
+  position: relative; }
+  .site li:nth-child(3) h5:before {
+    position: absolute;
+    content: "\f02e";
+    font-family: FontAwesome;
+    font-size: 1.5em;
+    color: #666666;
+    left: 20px; }
+  .site li:nth-child(4) h5:before {
+    position: absolute;
+    content: "\f080";
+    font-family: FontAwesome;
+    font-size: 1.5em;
+    color: #666666;
+    left: 20px; }
+  .site li:nth-child(5) h5:before {
+    position: absolute;
+    content: "\f29b";
+    font-family: FontAwesome;
+    font-size: 1.5em;
+    color: #666666;
+    left: 20px; }
+
+.young-site {
+  position: relative; }
+  .young-site li:nth-child(3) h5:before {
+    position: absolute;
+    content: "\f02e";
+    font-family: FontAwesome;
+    font-size: 1.5em;
+    color: #666666;
+    left: 20px; }
+  .young-site li:nth-child(4) h5:before {
+    position: absolute;
+    content: "\f080";
+    font-family: FontAwesome;
+    font-size: 1.5em;
+    color: #666666;
+    left: 20px; }
+  .young-site li:nth-child(5) h5:before {
+    position: absolute;
+    content: "\f29b";
+    font-family: FontAwesome;
+    font-size: 1.5em;
+    color: #666666;
+    left: 20px; }
+
+.advertise {
+  position: relative; }
+  .advertise li:nth-child(3) h5:before {
+    position: absolute;
+    content: "\f02e";
+    font-family: FontAwesome;
+    font-size: 1.5em;
+    color: #666666;
+    left: 20px; }
+  .advertise li:nth-child(4) h5:before {
+    position: absolute;
+    content: "\f080";
+    font-family: FontAwesome;
+    font-size: 1.5em;
+    color: #666666;
+    left: 20px; }
+  .advertise li:nth-child(5) h5:before {
+    position: absolute;
+    content: "\f29b";
+    font-family: FontAwesome;
+    font-size: 1.5em;
+    color: #666666;
+    left: 20px; }
 
 .wrap__cube {
   margin: 20px 0 20px 0;
@@ -565,6 +693,81 @@
 .cube1, .cube2, .cube3, .cube4, .cube5, .cube6 {
   -webkit-animation: rotate 0s infinite linear;
           animation: rotate 0s infinite linear; }
+
+.portfolio_ {
+  position: relative;
+  padding-bottom: 30px; }
+  .portfolio_ h1 {
+    position: relative;
+    margin: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    overflow: hidden; }
+    .portfolio_ h1 span:before, .portfolio_ h1 span:after {
+      position: absolute;
+      content: '';
+      display: inline-block;
+      border: 0 solid black;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
+      width: 100%;
+      height: 3px;
+      border-width: 0 70px; }
+    .portfolio_ h1 span:before {
+      margin-left: -105%; }
+    .portfolio_ h1 span:after {
+      margin-left: -90%; }
+
+.portfolio_ h3 {
+  position: relative;
+  text-align: center;
+  color: orange;
+  text-transform: uppercase; }
+
+._sim-menu {
+  position: relative;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  width: 60%;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 22px; }
+  ._sim-menu span {
+    display: inline-block;
+    padding-right: 20px; }
+    ._sim-menu span:after {
+      position: absolute;
+      content: '\f105';
+      font-family: FontAwesome;
+      font-size: 1.5em;
+      font-weight: 900;
+      color: blue;
+      padding-left: 10px; }
+
+._products {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+  ._products div:nth-child(1) {
+    position: relative;
+    width: 25%;
+    color: red;
+    border: 1px dotted black; }
+  ._products div:nth-child(2) {
+    color: orange;
+    width: 25%; }
+  ._products div:nth-child(3) {
+    width: 25%; }
+  ._products div:nth-child(4) {
+    width: 25%; }
+  ._products div:nth-child(5) {
+    width: 25%; }
+  ._products div:nth-child(6) {
+    width: 25%; }
 
 img {
   width: 100%;
