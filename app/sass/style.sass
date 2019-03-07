@@ -686,24 +686,41 @@
 
 ._products 
 	display: flex
-	div:nth-child(1)
+	flex-wrap: wrap
+	justify-content: center
+	div
 		position: relative
 		width: 25%
+		max-width: 500px
+		max-height: 300px
+		margin: 10px
+		box-shadow: 0px 5px 10px -5px #000, 5px 0px 10px -5px #000, -5px 0px 10px -5px #000
+		overflow: hidden
+		&:before
+			position: absolute 
+			content: ''
+			right: 0
+			left: 0
+			top: -20px
+			box-shadow: 0 25px 50px 40px #fff
+	div:nth-child(1)
 		color: red
-		border: 1px dotted black
 	div:nth-child(2)
 		color: orange
-		width: 25%
 	div:nth-child(3)
-		width: 25%
+		color: green
 	div:nth-child(4)
-		width: 25%
+		color: purple
 	div:nth-child(5)
-		width: 25%
+		color: yellow
 	div:nth-child(6)
-		width: 25%
+		color: brown
 	
-	
+.products-png
+	position: relative
+	bottom: 170px
+	opacity: 0.9
+
 	
 	
 	
