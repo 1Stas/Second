@@ -1,6 +1,11 @@
 .main {
   padding: 10px 20px 10px 20px; }
 
+img {
+  width: 100%;
+  -webkit-background-size: 50% 50%;
+          background-size: 50%; }
+
 .logo-text {
   display: inline-block;
   color: black;
@@ -420,8 +425,7 @@
   .our-services ul {
     width: 33.33%;
     padding: 50px 20px 20px 20px;
-    list-style: none;
-    border: 1px solid black; }
+    list-style: none; }
     .our-services ul h3 {
       color: orange;
       margin: 30px 0;
@@ -719,7 +723,7 @@
     .portfolio_ h1 span:after {
       margin-left: -90%; }
 
-.portfolio_ h3 {
+.portfolio_ h4 {
   position: relative;
   text-align: center;
   color: orange;
@@ -762,11 +766,10 @@
   ._products div {
     position: relative;
     width: 25%;
-    max-width: 500px;
-    max-height: 300px;
+    height: 300px;
     margin: 10px;
-    -webkit-box-shadow: 0px 5px 10px -5px #000, 5px 0px 10px -5px #000, -5px 0px 10px -5px #000;
-            box-shadow: 0px 5px 10px -5px #000, 5px 0px 10px -5px #000, -5px 0px 10px -5px #000;
+    -webkit-box-shadow: 0px 0px 20px -10px #000, 0px 0px 20px -10px #000, 0px 0px 20px -10px #000;
+            box-shadow: 0px 0px 20px -10px #000, 0px 0px 20px -10px #000, 0px 0px 20px -10px #000;
     overflow: hidden; }
     ._products div:before {
       position: absolute;
@@ -774,27 +777,115 @@
       right: 0;
       left: 0;
       top: -20px;
-      -webkit-box-shadow: 0 25px 50px 40px #fff;
-              box-shadow: 0 25px 50px 40px #fff; }
-  ._products div:nth-child(1) {
-    color: red; }
-  ._products div:nth-child(2) {
-    color: orange; }
-  ._products div:nth-child(3) {
-    color: green; }
-  ._products div:nth-child(4) {
-    color: purple; }
-  ._products div:nth-child(5) {
-    color: yellow; }
-  ._products div:nth-child(6) {
-    color: brown; }
+      -webkit-box-shadow: 0 45px 50px 50px #fff;
+              box-shadow: 0 45px 50px 50px #fff; }
+    ._products div:after {
+      position: absolute;
+      content: '';
+      background: url(../img/logo.png) no-repeat;
+      -webkit-background-size: 100% 100%;
+              background-size: 100% 100%;
+      top: 200px;
+      left: 20px;
+      width: 30px;
+      height: 30px; }
+    ._products div .text-top {
+      position: absolute;
+      padding: 0 10% 0 10%;
+      color: orange;
+      text-align: center;
+      top: 15px;
+      font-weight: bold;
+      font-size: 14px; }
+      ._products div .text-top span {
+        color: #3f3f3f; }
+    ._products div .text-bottom {
+      position: absolute;
+      color: orange;
+      padding: 0 10% 0 10%;
+      text-align: center;
+      font-weight: bold;
+      font-size: 14px;
+      bottom: 15px; }
+      ._products div .text-bottom span {
+        color: #3f3f3f; }
 
 .products-png {
-  position: relative;
-  bottom: 170px;
-  opacity: 0.9; }
+  position: absolute;
+  bottom: -100px; }
 
-img {
-  width: 100%;
-  -webkit-background-size: 50% 50%;
-          background-size: 50%; }
+._prod-cont button {
+  position: relative;
+  display: block;
+  margin: 40px auto 20px auto;
+  background: #ffffff;
+  border: 4px solid orange;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 5px 10px; }
+  ._prod-cont button div {
+    display: inline-block;
+    padding: 5px 10px;
+    background: orange;
+    font-size: 14px;
+    color: #fff;
+    margin-left: 10px; }
+
+.feedback_, .clients_, .professionals_, .advantages_, .development_, .trend_ {
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
+  padding-bottom: 30px; }
+  .feedback_ h1, .clients_ h1, .professionals_ h1, .advantages_ h1, .development_ h1, .trend_ h1 {
+    position: relative;
+    margin: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    overflow: hidden; }
+    .feedback_ h1:before, .feedback_ h1:after, .clients_ h1:before, .clients_ h1:after, .professionals_ h1:before, .professionals_ h1:after, .advantages_ h1:before, .advantages_ h1:after, .development_ h1:before, .development_ h1:after, .trend_ h1:before, .trend_ h1:after {
+      position: absolute;
+      content: '';
+      display: inline-block;
+      border: 0 solid black;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
+      width: 100%;
+      height: 3px;
+      top: 23px;
+      border-width: 0 70px; }
+    .feedback_ h1:before, .clients_ h1:before, .professionals_ h1:before, .advantages_ h1:before, .development_ h1:before, .trend_ h1:before {
+      margin-left: -103%; }
+    .feedback_ h1:after, .clients_ h1:after, .professionals_ h1:after, .advantages_ h1:after, .development_ h1:after, .trend_ h1:after {
+      margin-left: -92%; }
+  .feedback_ h4, .clients_ h4, .professionals_ h4, .advantages_ h4, .development_ h4, .trend_ h4 {
+    position: relative;
+    text-align: center;
+    font-weight: bold;
+    color: orange;
+    text-transform: uppercase; }
+  .feedback_ button, .clients_ button, .professionals_ button, .advantages_ button, .development_ button, .trend_ button {
+    position: relative;
+    display: block;
+    margin: 40px auto 20px auto;
+    background: #ffffff;
+    border: 4px solid orange;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 5px 10px; }
+    .feedback_ button div, .clients_ button div, .professionals_ button div, .advantages_ button div, .development_ button div, .trend_ button div {
+      display: inline-block;
+      padding: 5px 10px;
+      background: orange;
+      font-size: 14px;
+      color: #fff;
+      margin-left: 10px; }
+
+.trend_ h1:before, .trend_ h1:after {
+  top: 40px; }
+  .trend_ h1:before:before, .trend_ h1:after:before {
+    margin-left: -103%; }
+  .trend_ h1:before:after, .trend_ h1:after:after {
+    margin-left: -70%; }
