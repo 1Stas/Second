@@ -1,11 +1,6 @@
 .main {
   padding: 10px 20px 10px 20px; }
 
-img {
-  width: 100%;
-  -webkit-background-size: 50% 50%;
-          background-size: 50%; }
-
 .logo-text {
   display: inline-block;
   color: black;
@@ -772,6 +767,9 @@ img {
     -webkit-box-shadow: 0px 0px 20px -10px #000, 0px 0px 20px -10px #000, 0px 0px 20px -10px #000;
             box-shadow: 0px 0px 20px -10px #000, 0px 0px 20px -10px #000, 0px 0px 20px -10px #000;
     overflow: hidden; }
+    ._products div img {
+      position: absolute;
+      width: 100%; }
     ._products div:before {
       position: absolute;
       content: '';
@@ -779,7 +777,8 @@ img {
       left: 0;
       top: -20px;
       -webkit-box-shadow: 0 45px 50px 50px #fff;
-              box-shadow: 0 45px 50px 50px #fff; }
+              box-shadow: 0 45px 50px 50px #fff;
+      z-index: 1; }
     ._products div:after {
       position: absolute;
       content: '';
@@ -797,7 +796,8 @@ img {
       text-align: center;
       top: 15px;
       font-weight: bold;
-      font-size: 14px; }
+      font-size: 14px;
+      z-index: 1; }
       ._products div .text-top span {
         color: #3f3f3f; }
     ._products div .text-bottom {
@@ -815,17 +815,26 @@ img {
   position: absolute;
   bottom: -100px; }
 
-._prod-cont button {
-  position: relative;
+._prod-cont .butn {
   display: block;
+  width: 240px;
   margin: 40px auto 20px auto;
   background: #ffffff;
   border: 4px solid orange;
   font-size: 14px;
   font-weight: bold;
   text-transform: uppercase;
-  padding: 5px 10px; }
-  ._prod-cont button div {
+  padding: 5px 10px;
+  color: #000;
+  text-decoration: none; }
+  ._prod-cont .butn:hover, ._prod-cont .butn:focus {
+    text-decoration: none;
+    color: orange;
+    background: blue; }
+    ._prod-cont .butn:hover div, ._prod-cont .butn:focus div {
+      background: white;
+      color: orange; }
+  ._prod-cont .butn div {
     display: inline-block;
     padding: 5px 10px;
     background: orange;
@@ -837,13 +846,13 @@ img {
   position: relative;
   width: 80%;
   margin: 0 auto;
-  padding-bottom: 30px; }
+  padding-bottom: 30px;
+  text-align: center; }
   .feedback_ h1, .clients_ h1, .professionals_ h1, .advantages_ h1, .development_ h1 {
     position: relative;
     margin: 20px;
     font-weight: bold;
-    text-transform: uppercase;
-    text-align: center; }
+    text-transform: uppercase; }
     .feedback_ h1:before, .feedback_ h1:after, .clients_ h1:before, .clients_ h1:after, .professionals_ h1:before, .professionals_ h1:after, .advantages_ h1:before, .advantages_ h1:after, .development_ h1:before, .development_ h1:after {
       position: absolute;
       content: '';
@@ -861,21 +870,28 @@ img {
       margin-left: 2%; }
   .feedback_ h4, .clients_ h4, .professionals_ h4, .advantages_ h4, .development_ h4 {
     position: relative;
-    text-align: center;
     font-weight: bold;
     color: orange;
     text-transform: uppercase; }
-  .feedback_ button, .clients_ button, .professionals_ button, .advantages_ button, .development_ button {
-    position: relative;
-    display: block;
+  .feedback_ a, .clients_ a, .professionals_ a, .advantages_ a, .development_ a {
+    display: inline-block;
     margin: 40px auto 20px auto;
     background: #ffffff;
     border: 4px solid orange;
     font-size: 14px;
     font-weight: bold;
     text-transform: uppercase;
-    padding: 5px 10px; }
-    .feedback_ button div, .clients_ button div, .professionals_ button div, .advantages_ button div, .development_ button div {
+    padding: 5px 10px;
+    color: #000;
+    text-decoration: none; }
+    .feedback_ a:hover, .feedback_ a:focus, .clients_ a:hover, .clients_ a:focus, .professionals_ a:hover, .professionals_ a:focus, .advantages_ a:hover, .advantages_ a:focus, .development_ a:hover, .development_ a:focus {
+      text-decoration: none;
+      color: orange;
+      background: blue; }
+      .feedback_ a:hover div, .feedback_ a:focus div, .clients_ a:hover div, .clients_ a:focus div, .professionals_ a:hover div, .professionals_ a:focus div, .advantages_ a:hover div, .advantages_ a:focus div, .development_ a:hover div, .development_ a:focus div {
+        background: white;
+        color: orange; }
+    .feedback_ a div, .clients_ a div, .professionals_ a div, .advantages_ a div, .development_ a div {
       display: inline-block;
       padding: 5px 10px;
       background: orange;
@@ -915,20 +931,63 @@ img {
     font-weight: bold;
     color: orange;
     text-transform: uppercase; }
-  .trend_ button {
-    position: relative;
-    display: block;
-    margin: 40px auto 20px auto;
-    background: #ffffff;
-    border: 4px solid orange;
-    font-size: 14px;
-    font-weight: bold;
-    text-transform: uppercase;
-    padding: 5px 10px; }
-    .trend_ button div {
-      display: inline-block;
-      padding: 5px 10px;
-      background: orange;
-      font-size: 14px;
-      color: #fff;
-      margin-left: 10px; }
+
+.feedback__item {
+  position: relative;
+  padding: 10px;
+  margin: 20px auto 0 auto;
+  width: 80%;
+  -webkit-box-shadow: 0 0 2px #555555;
+          box-shadow: 0 0 2px #555555;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  text-align: left; }
+
+.ava-nick {
+  display: inline-block;
+  vertical-align: top;
+  width: 105px; }
+
+.ava {
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  background: url(../img/ava.png) no-repeat;
+  -webkit-background-size: 100% 100%;
+          background-size: 100% 100%;
+  -webkit-box-shadow: 0 0 5px;
+          box-shadow: 0 0 5px; }
+
+.nick {
+  width: 90%;
+  text-align: center;
+  color: blue;
+  font-weight: bold; }
+
+.com {
+  display: inline-block;
+  margin-left: 10px;
+  width: 85%; }
+
+.ava2 {
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  background: url(../img/bolt.jpg) no-repeat;
+  -webkit-background-size: 100% 100%;
+          background-size: 100% 100%;
+  -webkit-box-shadow: 0 0 5px;
+          box-shadow: 0 0 5px; }
+
+.ava3 {
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  background: url(../img/girl.jpg) no-repeat;
+  -webkit-background-size: 100% 100%;
+          background-size: 100% 100%;
+  -webkit-box-shadow: 0 0 5px;
+          box-shadow: 0 0 5px; }

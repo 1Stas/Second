@@ -17,3 +17,16 @@
 		}
 	});
 });
+
+// Карусель.
+
+$(document).ready(function(){
+	$(".owl-carousel").owlCarousel({
+		nav:true,
+		loop:true,
+	//	autoplay:true,
+	//	autoplayTimeout:2000,
+	//	smartSpeed:1900,
+		responsive: {0:{items:1}, 500:{items:2}, 900:{items:3}},
+	});
+});
