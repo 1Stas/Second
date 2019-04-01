@@ -22,11 +22,14 @@
 
 $(document).ready(function(){
 	$(".owl-carousel").owlCarousel({
-		nav:true,
+	//	nav:true,
 		loop:true,
+		center: true,
+	//	autoWidth:true,
+	//	items:1,
 	//	autoplay:true,
 	//	autoplayTimeout:2000,
 	//	smartSpeed:1900,
-		responsive: {0:{items:1}, 500:{items:2}, 900:{items:3}},
+		responsive: {0:{items:1}, 500:{items:2, center:false}, 900:{items:3}},
 	});
 });

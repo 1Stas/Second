@@ -23,18 +23,18 @@ gulp.task('sass', function(){ // Создаем таск Sass
         .pipe(browserSync.reload({stream: true})) // Обновляем CSS на странице при изменении
 });
 
-//Релоад браузера
+// Релоад браузера
 gulp.task('browser-sync', function() { // Создаем таск browser-sync
     browserSync.init({ // Выполняем browserSync
         server: { // Определяем параметры сервера
             baseDir: 'app' // Директория для сервера - app
 				},
-				browser: 'firefox', // Запускает сайт в Firefox
+				// browser: 'firefox', // Запускает сайт в Firefox
         notify: false // Отключаем уведомления
     });
 });
 
-//Библиотеки JQuery и Magnific Popup
+// Библиотеки JQuery и Magnific Popup
 gulp.task('scripts', function() {
 	return gulp.src([ // Берем все необходимые библиотеки
 			'app/libs/jquery/dist/jquery.min.js', // Берем jQuery
