@@ -1,5 +1,3 @@
-.main
-	padding: 10px 20px 10px 20px
 
 .logo-text
 	display: inline-block
@@ -81,8 +79,8 @@
 .telephone
 	color: orange
 	&:hover
-			text-decoration: none
-			color: red
+		text-decoration: none
+		color: red
 	p
 		display: inline
 		color: #8c8c8c
@@ -153,7 +151,6 @@
 			width: 100%
 			text-align: initial
 			text-shadow: 3px 3px 10px black
-			transition: .5s
 			transition: .5s
 			&:hover
 				text-decoration: none
@@ -766,7 +763,7 @@
 			color: #fff
 			margin-left: 10px
 
-.feedback_, .clients_, .professionals_, .advantages_, .development_
+.feedback_, .clients_, .professionals_, .advantages_, .development_, .contacts_
 	position: relative
 	width: 80%
 	margin: 0 auto
@@ -846,7 +843,7 @@
 		&:before
 			margin-left: -102%
 		&:after
-			margin-left: 14%
+			margin-left: 24%
 	h4
 		position: relative
 		text-align: center
@@ -929,9 +926,6 @@
 			width: 300px
 			left: 0
 			box-shadow: 0 0 5px
-			transition: 1s
-			&:hover, &:focus
-				left: -250px
 	._item-2
 		position: relative
 		display: inline-block
@@ -942,29 +936,46 @@
 			width: 300px
 			left: 0
 			box-shadow: 0 0 5px
-			transition: 1s
-			&:hover, &:focus
-				left: -250px
+
+.a1, .a7
+	position: absolute
+	top: 0px
+	left: 0px
+	transition: 1s
+	&:hover, &:focus
+		left: -250px
 
 .a2, .a8
 	position: absolute
 	top: 20px
 	left: 20px
+	transition: 1s
+	&:hover, &:focus
+		left: -235px
 
 .a3, .a9
 	position: absolute
 	top: 40px
 	left: 40px
+	transition: 1s
+	&:hover, &:focus
+		left: -220px
 
 .a4, .a10
 	position: absolute
 	top: 60px
 	left: 60px
+	transition: 1s
+	&:hover, &:focus
+		left: -205px
 
 .a5, .a11
 	position: absolute
 	top: 80px
 	left: 80px
+	transition: 1s
+	&:hover, &:focus
+		left: -190px
 
 .a6, .a12
 	position: absolute
@@ -994,7 +1005,6 @@
 	margin-top: 40px
 	a
 		width: 40%
-		border: 1px solid black
 		padding: 80px 10px 20px 10px
 		cursor: pointer
 		&:hover
@@ -1072,16 +1082,235 @@
 	display: flex
 	flex-wrap: wrap
 	justify-content: space-evenly
+	margin-top: 30px
+	margin-bottom: 20px
 	h4 
+		margin-bottom: 30px
 		color: #1888b1
-	._dev-item-1
-		width: 40%
-	._dev-item-2
-		width: 40%
 
+._dev-item-1, ._dev-item-2
+	width: 45%
 
+.dev-name
+	position: relative
+	float: left
+	padding-left: 33px
+	color: #8a8a8a
+	text-decoration: none
+	&:before
+		position: absolute
+		content: '\f2c0'
+		font-family: FontAwesome
+		font-size: 1.5rem
+		left: 3px
+		top: -10px
+		color: #000
 
+.dev-date
+	position: relative
+	float: right
+	padding-right: 10px
+	color: #8a8a8a
+	text-decoration: none
+	&:before
+		position: absolute
+		content: '\f073'
+		font-family: FontAwesome
+		font-size: 1.5rem
+		left: -28px
+		top: -10px
+		color: #000
 
+.div-content
+	position: relative
+	display: block
+	width: 100%
+	height: 250px
+	margin-top: 10px
+	background: url(../img/div-content.png) no-repeat center
+	background-size: 100% 100%
+	overflow: hidden
+	&:before
+		position: absolute
+		content: 'News'
+		display: block
+		width: 100px
+		height: 25px
+		background: orange
+		top: 50px
+		left: -100px
+		transition: .5s
+	&:hover::before
+		left: 0
 
+._dev-item-2 .div-content
+	background: url(../img/div-content1.jpg) no-repeat center
+	background-size: 100% 100%
+	
+.div-comment
+	position: relative
+	float: left
+	padding-left: 35px
+	&:before
+		position: absolute
+		content: '\f0c9'
+		font-family: FontAwesome
+		font-size: 1.5rem
+		left: 3px
+		top: -7px
+	span 
+		padding-left: 10px
 
+.div-read
+	float: right
+	padding-right: 10px
 
+section 
+	width: 100%
+	height: 100vh
+	box-sizing: border-box
+
+section.sec1 
+	margin-top: 40px
+	background: url(../img/paralax-1.jpg) no-repeat center / cover
+	background-attachment: fixed
+
+section.sec2 
+	background: url(../img/paralax-2.jpg) no-repeat center / cover
+	background-attachment: fixed
+
+section.sec3 
+	background: url(../img/paralax-3.jpg)no-repeat center / cover
+	background-attachment: fixed
+
+section.sec4 
+	background: url(../img/paralax-4.jpg)no-repeat center / cover
+	background-attachment: fixed
+
+section.sec5
+	background: url(../img/paralax-5.jpg)no-repeat center / cover
+	background-attachment: fixed
+
+.sec-text 
+	padding: 2% 8%
+	height: auto
+
+.sec-text__title 
+	margin: 0
+	padding: 0
+	font-size: 2em
+
+.sec-text__dsc 
+	font-size: 1em
+
+._fb 
+	display: flex
+	flex-wrap: wrap
+	justify-content: center
+	margin-top: 30px
+
+.fbitem-1
+	width: 45%
+	padding: 10px
+	text-align: left
+	p
+		color: #8a8a8a
+	div
+		line-height: 50%
+		span 
+			color: #8a8a8a
+			font-size: 6px
+
+.fbitem-2
+	position: relative
+	width: 46%
+	padding: 10px
+	&:before
+		position: absolute
+		content: 'M A P'
+		top: 10px
+		left: 60px
+		font-size: 120px
+		color: #e6e6e6
+		font-weight: bold
+
+.fbitem-3
+	width: 56%
+	padding-top: 20px
+	text-align: left
+	font-size: 16px
+	line-height: 70%
+	span 
+		color: #8a8a8a
+
+.contacts_
+	width: 100%
+	background: #ffebeb
+	line-height: 50%
+	div p
+		color: #8a8a8a
+
+.cont-container
+	display: flex
+	flex-wrap: nowrap
+	justify-content: center
+	width: 80%
+	margin: 0 auto
+	margin-top: 30px
+
+.cont-form
+	width: 70%
+	text-align: left
+	p 
+		margin: 0
+	input
+		height: 30px
+		width: 228px
+		padding: 5px
+		margin-right: 20px
+		&:focus::placeholder
+			color: transparent
+	input[type='submit'],[type='reset']
+		width: 20%
+		display: inline-block
+		margin: 0 20px 0 auto
+		background: #ffffff
+		border: 4px solid orange
+		font-size: 14px
+		font-weight: bold
+		text-transform: uppercase
+		padding: 5px 10px
+		color: #000
+		text-decoration: none
+		&:hover, &:focus
+			text-decoration: none
+			color: orange
+			background: blue
+	textarea
+		padding: 10px 5px 5px 5px
+		margin: 20px 0 20px 0
+		width: 732px
+		&:focus::placeholder
+			opacity: 0
+
+.contacts_ .cont-img
+	width: 25%
+	img 
+		width: 100%
+		margin-bottom: 15px
+	p 
+		color: #000
+		b
+			color: #000
+
+.footer
+	display: flex
+	justify-content: center
+	flex-wrap: nowrap
+	width: 80%
+	margin: 0 auto
+	div
+		width: 25%
+		border 1px solid black
+		h5
+			color: orange
