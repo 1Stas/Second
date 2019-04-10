@@ -1303,14 +1303,121 @@ section.sec5
 		b
 			color: #000
 
+footer 
+	background: #1f1f1f
+
 .footer
 	display: flex
 	justify-content: center
 	flex-wrap: nowrap
 	width: 80%
 	margin: 0 auto
-	div
+	padding: 50px 0 50px 0
+	.footer-column
 		width: 25%
-		border 1px solid black
-		h5
+		padding: 10px
+		h4, h5
+			margin-bottom: 10px
 			color: orange
+		h6 a
+			position: relative
+			padding-left: 20px
+			color: orange
+			text-decoration: none
+			&:before
+				position: absolute
+				content: '\f071'
+				font-family: FontAwesome
+				font-size: 1rem
+				left: 0
+				top: 2px
+				transform: rotate(90deg)
+				color: #fff
+				transition: 0.5s
+			&:hover::before
+				transform: rotate(0deg)
+		a 
+			color: #c0c0c0
+			text-decoration: underline
+
+.underfooter
+	width: 80%
+	margin: 0 auto
+	h4
+		color: orange
+	.under-a
+		color: #c0c0c0
+		text-decoration: underline
+	i 
+		color: #c0c0c0
+		font-size: 12px
+	span 
+		color: #c0c0c0
+	.under-vk
+		position: relative
+		display: inline-block
+		width: 50px
+		height: 50px
+		border-radius: 50%
+		border: 2px solid #c0c0c0
+		&:before
+			position: absolute
+			content: '\f189'
+			font-family: FontAwesome
+			font-size: 1.8rem
+			top: -1px
+			left: 6px
+			color: #c0c0c0
+		&:hover::before 
+			color: orange
+	.under-fb
+		position: relative
+		display: inline-block
+		width: 50px
+		height: 50px
+		border-radius: 50%
+		border: 2px solid #c0c0c0
+		&:before
+			position: absolute
+			content: '\f09a'
+			font-family: FontAwesome
+			font-size: 1.8rem
+			top: 1px
+			left: 12px
+			color: #c0c0c0
+		&:hover::before 
+			color: blue
+	.under-google
+		position: relative
+		display: inline-block
+		width: 50px
+		height: 50px
+		border-radius: 50%
+		border: 2px solid #c0c0c0
+		&:before
+			position: absolute
+			content: '\f1a0'
+			font-family: FontAwesome
+			font-size: 1.8rem
+			top: 1px
+			left: 11px
+			color: #c0c0c0
+		&:hover::before 
+			color: white
+	.under-youtube
+		position: relative
+		display: inline-block
+		width: 50px
+		height: 50px
+		border-radius: 50%
+		border: 2px solid #c0c0c0
+		&:before
+			position: absolute
+			content: '\f16a'
+			font-family: FontAwesome
+			font-size: 1.8rem
+			top: 1px
+			left: 9px
+			color: #c0c0c0
+		&:hover::before 
+			color: red
