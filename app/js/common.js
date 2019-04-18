@@ -33,3 +33,25 @@ $(document).ready(function(){
 		responsive: {0:{items:1}, 500:{items:2, center:false}, 900:{items:3}},
 	});
 });
+
+$(document).ready(function(){
+
+	$("#back-top").hide();
+	
+	$(function () {
+		$(window).scroll(function () {
+			if ($(this).scrollTop() > 1000) {
+				$('#back-top').fadeIn();
+			} else {
+				$('#back-top').fadeOut();
+			}
+		});
+
+		$('#back-top a').click(function () {
+			$('body,html').animate({
+				scrollTop: 0
+			}, 800);
+			return false;
+		});
+	});
+});

@@ -29,7 +29,7 @@ gulp.task('browser-sync', function() { // Создаем таск browser-sync
         server: { // Определяем параметры сервера
             baseDir: 'app' // Директория для сервера - app
 				},
-				// browser: 'firefox', // Запускает сайт в Firefox
+				browser: 'firefox', // Запускает сайт в Firefox
         notify: false // Отключаем уведомления
     });
 });
