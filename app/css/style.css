@@ -779,7 +779,8 @@
     overflow: hidden;
     -webkit-transition: 0.2s;
     -o-transition: 0.2s;
-    transition: 0.2s; }
+    transition: 0.2s;
+    max-width: 350px; }
     ._products .products-img:hover {
       -webkit-box-shadow: 0px 0px 20px -5px #000;
               box-shadow: 0px 0px 20px -5px #000; }
@@ -1362,23 +1363,23 @@ section.sec5 {
 
 .contacts_ {
   width: 100%;
-  background: #ffebeb;
-  line-height: 50%; }
+  background: #ffebeb; }
   .contacts_ div p {
-    color: #8a8a8a; }
+    color: #8a8a8a;
+    padding-left: 10px;
+    padding-right: 10px; }
 
 .cont-container {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-wrap: nowrap;
-      -ms-flex-wrap: nowrap;
-          flex-wrap: nowrap;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
   width: 80%;
   margin: 0 auto;
   margin-top: 30px; }
@@ -1390,9 +1391,8 @@ section.sec5 {
     margin: 0; }
   .cont-form input {
     height: 30px;
-    width: 228px;
-    padding: 5px;
-    margin-right: 20px; }
+    width: 33%;
+    padding: 5px; }
     .cont-form input:focus::-webkit-input-placeholder {
       color: transparent; }
     .cont-form input:focus::-moz-placeholder {
@@ -1404,7 +1404,6 @@ section.sec5 {
     .cont-form input:focus::placeholder {
       color: transparent; }
   .cont-form input[type='submit'], .cont-form [type='reset'] {
-    width: 20%;
     display: inline-block;
     margin: 0 20px 0 auto;
     background: #ffffff;
@@ -1414,7 +1413,8 @@ section.sec5 {
     text-transform: uppercase;
     padding: 5px 10px;
     color: #000;
-    text-decoration: none; }
+    text-decoration: none;
+    line-height: 0; }
     .cont-form input[type='submit']:hover, .cont-form input[type='submit']:focus, .cont-form [type='reset']:hover, .cont-form [type='reset']:focus {
       text-decoration: none;
       color: orange;
@@ -1422,7 +1422,7 @@ section.sec5 {
   .cont-form textarea {
     padding: 10px 5px 5px 5px;
     margin: 20px 0 20px 0;
-    width: 732px; }
+    width: 100%; }
     .cont-form textarea:focus::-webkit-input-placeholder {
       opacity: 0; }
     .cont-form textarea:focus::-moz-placeholder {
@@ -1921,6 +1921,12 @@ footer {
   .div-content {
     height: 20rem; } }
 
+@media (max-width: 1561px) {
+  .cont-form input {
+    width: 32%; }
+  .cont-form textarea {
+    width: 97%; } }
+
 @media (max-width: 1500px) {
   .owl-carousel .owl-item img {
     height: 15rem; } }
@@ -2001,7 +2007,12 @@ footer {
       left: 2px; }
   .div-read {
     width: 100%;
-    text-align: left; } }
+    text-align: left; }
+  .contacts_ .cont-img {
+    width: 33%;
+    margin-top: 30px; }
+  .cont-form {
+    width: 100%; } }
 
 @media (max-width: 783px) {
   .trend_ h1::before {
@@ -2116,7 +2127,14 @@ footer {
   ._item-adv a {
     width: 100%; }
   ._dev-item-1, ._dev-item-2 {
-    width: 80%; } }
+    width: 80%; }
+  .cont-form input {
+    width: 97%;
+    margin-top: 10px; }
+  .cont-form [type='reset'] {
+    margin-top: 10px; }
+  .cont-container {
+    width: 90%; } }
 
 @media (max-width: 450px) {
   .our-services ul {
@@ -2150,7 +2168,9 @@ footer {
   .div-content {
     height: 10rem; }
   .feedback_ h1::before, .feedback_ h1::after {
-    margin-left: 200%; } }
+    margin-left: 200%; }
+  .contacts_ .cont-img {
+    width: 80%; } }
 
 @media (max-width: 389px) {
   .clients_ h1::before {

@@ -708,6 +708,7 @@
 		box-shadow: 0px 0px 10px -5px #000
 		overflow: hidden
 		transition: 0.2s
+		max-width: 350px
 		&:hover
 			box-shadow: 0px 0px 20px -5px #000
 		img
@@ -1225,14 +1226,15 @@ section.sec5
 .contacts_
 	width: 100%
 	background: #ffebeb
-	line-height: 50%
 	div p
 		color: #8a8a8a
+		padding-left: 10px
+		padding-right: 10px
 
 .cont-container
 	display: flex
-	flex-wrap: nowrap
-	justify-content: center
+	flex-wrap: wrap
+	justify-content: space-around
 	width: 80%
 	margin: 0 auto
 	margin-top: 30px
@@ -1244,13 +1246,11 @@ section.sec5
 		margin: 0
 	input
 		height: 30px
-		width: 228px
+		width: 33%
 		padding: 5px
-		margin-right: 20px
 		&:focus::placeholder
 			color: transparent
 	input[type='submit'],[type='reset']
-		width: 20%
 		display: inline-block
 		margin: 0 20px 0 auto
 		background: #ffffff
@@ -1261,6 +1261,7 @@ section.sec5
 		padding: 5px 10px
 		color: #000
 		text-decoration: none
+		line-height: 0
 		&:hover, &:focus
 			text-decoration: none
 			color: orange
@@ -1268,7 +1269,7 @@ section.sec5
 	textarea
 		padding: 10px 5px 5px 5px
 		margin: 20px 0 20px 0
-		width: 732px
+		width: 100%
 		&:focus::placeholder
 			opacity: 0
 
@@ -1610,6 +1611,13 @@ footer
 	.div-content
 		height: 20rem
 
+@media (max-width: 1561px)
+	.cont-form input
+		width: 32%
+
+	.cont-form textarea
+		width: 97%
+
 @media (max-width: 1500px)
 	.owl-carousel .owl-item img
 		height: 15rem
@@ -1703,6 +1711,13 @@ footer
 	.div-read
 		width: 100%
 		text-align: left
+
+	.contacts_ .cont-img
+		width: 33%
+		margin-top: 30px
+
+	.cont-form
+		width: 100%
 
 @media (max-width: 783px)
 	.trend_ h1::before
@@ -1843,6 +1858,16 @@ footer
 	._dev-item-1, ._dev-item-2
 		width: 80%
 
+	.cont-form input
+		width: 97%
+		margin-top: 10px
+	
+	.cont-form [type='reset']
+		margin-top: 10px
+	
+	.cont-container
+		width: 90%
+
 @media (max-width: 450px)
 	.our-services ul
 		width: 80%
@@ -1886,6 +1911,9 @@ footer
 
 	.feedback_ h1::before, .feedback_ h1::after
 		margin-left: 200%
+
+	.contacts_ .cont-img
+		width: 80%
 
 @media (max-width: 389px)
 	.clients_ h1::before
